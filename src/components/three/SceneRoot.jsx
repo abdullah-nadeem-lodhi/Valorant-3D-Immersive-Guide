@@ -79,8 +79,13 @@ function ProfileScene({ agent, isMobile }) {
 function SceneLights({ accentColor }) {
   return (
     <>
-      <ambientLight intensity={0.15} />
-      <directionalLight position={[5, 8, 5]} intensity={0.8} color="#ffffff" castShadow />
+      <ambientLight intensity={0.45} />
+      <directionalLight
+        position={[5, 8, 5]}
+        intensity={1.0}
+        color="#ffffff"
+        castShadow
+      />
       <pointLight position={[-3, 2, 2]} intensity={1.2} color={accentColor} />
       <pointLight position={[3, -1, -2]} intensity={0.6} color={accentColor} distance={8} />
       <spotLight
